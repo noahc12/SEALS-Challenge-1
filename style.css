@@ -1,0 +1,26 @@
+body {
+    background-color: #96b9f2;
+    border: ridge;
+}
+h1 {
+    font-family: optima; 
+    position: relative;
+    left: 500px;
+
+}
+#circle {
+    height: 50px;
+    width: 50px;
+    background-color:#000000;
+    border-radius: 50%;
+    position: relative;
+    bottom: -450px;
+}
+#left {
+    position: relative;
+    bottom: -470px;
+}
+#right {
+    position: relative;
+    bottom: -470px;
+}
