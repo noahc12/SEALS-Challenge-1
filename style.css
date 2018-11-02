@@ -1,26 +1,43 @@
 body {
     background-color: #96b9f2;
-    border: ridge;
-}
-h1 {
-    font-family: optima; 
+    height: 300px;
+ }
+ h1 {
+    font-family: optima;
     position: relative;
     left: 500px;
-
-}
-#circle {
+ 
+ }
+ .container {
+    border-style: solid;
+    height: 250px;
+    position: relative;
+    bottom: -250px;
+ }
+ #circle {
     height: 50px;
     width: 50px;
     background-color:#000000;
     border-radius: 50%;
     position: relative;
     bottom: -450px;
-}
-#left {
+    margin-left: 23px;
+ 
+ }
+ #left {
     position: relative;
-    bottom: -470px;
-}
-#right {
+    bottom: -270px;
+ }
+ #right {
     position: relative;
-    bottom: -470px;
-}
+    bottom: -270px;
+ }
+ #up {
+    position: relative;
+    bottom: -270px;
+ }
+ #down {
+    position: relative;
+    bottom: -270px;
+ }
+ 

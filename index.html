@@ -4,23 +4,32 @@
 <head>
 
 
-  <title>Javascript Challenge #1</title>
-  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+ <title>Javascript Challenge #1</title>
+ <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 
 </head>
 <h1>
-    Seals Challenge #1
+   Seals Challenge #1
 </h1>
 <body>
-    <div class="shapes">
-    <div id="circle"></div>
-    </div>
-<button id= "left">
- Press to move left
-</button>
-<button id= "right">
- Press to move right
-</button>
-  <script src="js/scripts.js"></script>
+   <div class="container">
+     <div id="circle" style="left:0px; top:0px"></div>
+   </div>
+   <div id="controls">
+     <button class="dir-btns" id= "left">
+       left
+     </button>
+     <button class="dir-btns" id= "right">
+       right
+     </button>
+     <button class="dir-btns" id= "up">
+       up
+     </button>
+     <button class="dir-btns" id= "down">
+       down
+     </button>
+
+   </div>
+ <script src="js/app.js"></script>
 </body>
 </html>
