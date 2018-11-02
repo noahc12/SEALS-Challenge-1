@@ -37,6 +37,7 @@ document.getElementById('left').addEventListener('click',function() {
     document.getElementById('circle').style.top = newPosition + 'px';
 
  });
+<<<<<<< HEAD
 //  function component(width, height, color, x, y, type) {
 //     this.type = type;
 //     this.width = width;
@@ -67,3 +68,35 @@ document.getElementById('left').addEventListener('click',function() {
 //         }
 //     }
 // }
+=======
+ function component(width, height, color, x, y, type) {
+    this.type = type;
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;
+    this.speedX = 0;
+    this.speedY = 0;
+    this.gravity = 0.1;
+    this.gravitySpeed = 0;
+    this.bounce = 0.6;
+    this.update = function() {
+        ctx = myGameArea.context;
+        ctx.fillStyle = color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+    this.newPos = function() {
+        this.gravitySpeed += this.gravity;
+        this.x += this.speedX;
+        this.y += this.speedY + this.gravitySpeed;
+        this.hitBottom();
+    }
+    this.hitBottom = function() {
+        var rockbottom = myGameArea.canvas.height - this.height;
+        if (this.y > rockbottom) {
+            this.y = rockbottom;
+            this.gravitySpeed = -(this.gravitySpeed * this.bounce);
+        }
+    }
+}
+>>>>>>> 7df85a6818a784260125cfbd112534e79c1e4b14
